@@ -5,12 +5,11 @@ https://codestool.coding-gnome.com/courses/take/elixir-for-programmers
 ## Getting Started
 
 Exercises
-1. Use IEx to calculate 999999999 * 111111111
-2. Find the name of a function in the String module that
-   removes leading and trailing whitespace from its parameter.
-3. Use the v helper to divide the result calculated in step 1
-   by 9.
-4. Try typing h (for help) on its own.
+- [x] 1. Use IEx to calculate 999999999 * 111111111
+- [x] 2. Find the name of a function in the String module that removes leading
+  and trailing whitespace from its parameter.
+- [x] 3. Use the v helper to divide the result calculated in step 1 by 9.
+- [x] 4. Try typing h (for help) on its own.
 
 ## Our First Project
 
@@ -38,15 +37,14 @@ mix new dictionary
 
 ```bash
 tree
-
-# .
-# ├── README.md
-# ├── lib
-# │   └── dictionary.ex
-# ├── mix.exs
-# └── test
-#     ├── dictionary_test.exs
-#     └── test_helper.exs
+  .
+  ├── README.md
+  ├── lib
+  │   └── dictionary.ex
+  ├── mix.exs
+  └── test
+      ├── dictionary_test.exs
+      └── test_helper.exs
 ```
 
 Key Points: create a new Elixir project using
@@ -71,7 +69,21 @@ our source code lives under `lib/`, and our project is called dictionary,
 mix already created a file called `lib/dictionary.ex`, just waiting for us
 to start hacking.
 
-xxx
+[:ship: 685f7a8](https://github.com/arafatm/learn_elixir_coding_gnome/commit/685f7a8)
+remove boilerplate
+
+[:ship: 22af25e](https://github.com/arafatm/learn_elixir_coding_gnome/commit/22af25e)
+Hello World
+
+```bash
+mix                         # compile
+mix run -e Dictionary.hello # run hello method in Dictionary module
+
+iex -S mix                  # run iex with mix which will load the project
+    # r Dictionary          # in iex to recompile Dictionary module if modified
+    # c "lib/dictionary.ex" # same as ^                    
+
+```
 
 #### Things we saw: Language Stuff
 
@@ -116,10 +128,11 @@ The name may end with an exclamation point or a question mark.
 
 `mix run -e ⟪code⟫` executes the code in the context of your project
 
-`iex -S mix` starts iex in the context of your project—it uses mix to
-build the application environment and then enters iex
+`iex -S mix` starts iex in the context of your project - it uses mix to build
+the application environment and then enters iex
 
 inside iex:
+
 ```elixir
 iex> r ModuleName       # recompiles the file containing ModuleName
 
@@ -128,18 +141,18 @@ iex> c "lib/name.ex"    # compiles the given file
 
 #### Your Turn
 
-- If you haven’t already coded along with the video, do it now.
-- Run the hello function you wrote using both mix and iex.
-- Keep iex running, and change the message you output in the program
+- [x] If you haven’t already coded along with the video, do it now.
+- [x] Run the hello function you wrote using both mix and iex.
+- [x] Keep iex running, and change the message you output in the program
   source. Save it away. Reload the file in iex using the r command and
   rerun your function.
-- Introduce some syntax errors into your module. Leave off a do or an end,
+- [x] Introduce some syntax errors into your module. Leave off a do or an end,
   misspell def and so on. Have a look at the error messages when you
   compile, and see how they relate to the changes you made.
 
-
-
 ## A Mad Dash Through Elixir Types 0 / 10
+
+xxx
 
 ## Pattern Matching 0 / 6
 
